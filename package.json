@@ -1,10 +1,10 @@
 {
   "name": "@vit100/express-bearer-token-case-insensitive",
   "description": "Bearer token middleware for express. Extracts case-insensitive bearer token from request",
-  "version": "2.2.0",
+  "version": "2.4.0",
   "homepage": "https://github.com/vit100/js-express-bearer-token.git",
   "authors": [
-    "Tyler Kellen <tyler@sleekcode.net>"
+    "Tyler Kellen <tyler@sleekcode.net>","Vitaliy Mark"
   ],
   "repository": {
     "type": "git",
@@ -15,19 +15,18 @@
   },
   "main": "index.js",
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">= 6.0.0"
   },
   "scripts": {
     "test": "mocha -R spec test"
   },
   "devDependencies": {
-    "chai": "4.2.0",
-    "mocha": "5.2.0"
+    "chai": "^4.2.0",
+    "cookie-signature": "^1.1.0",
+    "mocha": "^6.0.2"
   },
-  "keywords": [
-    "bearer token",
-    "bearer token middleware",
-    "express token",
-    "authorization bearer"
-  ]
+  "dependencies": {
+    "cookie": "^0.3.1",
+    "cookie-parser": "^1.4.4"
+  }
 }
